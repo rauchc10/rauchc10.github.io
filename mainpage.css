@@ -1,0 +1,240 @@
+/* --main page design-- */
+
+body, html {
+  height: 100%;
+}
+.parallax {
+
+  /* Full height */
+  height: 80%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax.parallax-1 {
+  /* The image used */
+  background-image: url('Lightbluemarble.JPG');
+}
+.parallax.parallax-2 {
+  /* The image used */
+  background-image: url('Marble_greenfield.JPG');
+  height: 95%;
+}
+.parallax.parallax-3 {
+  /* The image used */
+  background-image: url('marbles_furtherback.JPG');
+}
+.parallax_content {
+  position: absolute;
+  left: 3%;
+  bottom: auto;
+  right: auto;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 275%;
+}
+.scrolling-bg {
+  position: relative;
+  min-height: 60%;
+  padding: 4em 0;
+  line-height: 1.6;
+  -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.scrolling-bg__content {
+  width: 90%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+      background-attachment: scroll;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+}
+/* -----navigation */
+.nav{
+  border: 0;
+  border-width: 0;
+  list-style:none;
+  margin-right:20;
+  padding-right: 20;
+  background-color: #ffffff;
+  text-align:right;
+  width: 100%;
+}
+.nav li{
+  display:inline;
+}
+.nav a{
+  display:inline-block;
+  padding:15px;
+  color: #4e5964;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: ##707090;
+}
+/* ------end navigation */
+
+/*Jump to nav elements and header issues*/
+.anchor{
+display: block;
+height: 225px; /*height from top header*/
+margin-top: -225px; /*height from top header*/
+visibility: hidden;
+}
+/*End Jumpt to nav elements and header issues*/
+
+/* Turning off header white background.
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4e5964;
+}
+End header white background */
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  text-shadow: 1px 1px;
+}
+
+h2 {
+  text-align: left;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666666;
+  padding-left: 25px;
+}
+h3 {
+  text-align: left;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2c3339;
+  padding-left: 25px;
+}
+h4 {
+  text-align: left;
+  font-family: georgia, serif;
+  color: ##336699;
+  padding-left: 25px;
+}
+div {
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+}
+p.w {
+  font-family: georgia, serif;
+  color: #ffffff;
+  float:left;
+  padding-left: 25px;
+}
+p.k {
+  font-family: georgia, serif;
+  color: #000000;
+  float:left;
+  padding-left: 25px;
+}
+.footer {
+font-family: Arial, Helvetica, sans-serif;
+color: #4e5964;
+text-align: center;
+padding-right: 25px;
+padding-bottom: 25px;
+padding-left: 25px;
+}
+/* LINKS */
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  padding-left: 25px;
+}
+a:link, a:visited {
+    color: ##4e5964;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+/* END LINKS */
+
+/*Gallery starts here. responsive gallery*/
+div.gallery {
+  border: none;
+}
+
+div.gallery:hover {
+  border: none;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  font-family: georgia, serif;
+  color: #4e5964;
+  text-align: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+  .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .responsive {
+      width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*End Gallery styles*/

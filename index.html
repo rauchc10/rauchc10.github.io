@@ -1,176 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-  /* fixed background image
-.fixed-bg {
-    background-image: url("mountainvista_lake_crop.jpg");
-    min-height: 450px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-*/
-body, html {
-    height: 100%;
-}
-.parallax {
-    /* The image used */
-    background-image: url('mountainvista_lake_crop.jpg');
-
-    /* Full height */
-    height: 80%;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-    .parallax {
-        background-attachment: scroll;
-    }
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-
-}
-/* navigation */
-.nav{
-    border: 0;
-    border-width: 0;
-    list-style:none;
-    margin:0;
-    padding: 0;
-    text-align:right;
-    background-color: #ffffff;
-    width: 100%;
-}
-.nav li{
-    display:inline;
-}
-.nav a{
-    display:inline-block;
-    padding:15px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #4e5964;
-}
-.nav a:hover:not(.active) {
-    background-color: #ddd;
-}
-
-li a.active {
-    color: white;
-    background-color: ##707090;
-}
-/* end navigation */
-
-/*Jump to nav elements and header issues*/
-.anchor{
-  display: block;
-  height: 225px; /*height from top header*/
-  margin-top: -225px; /*height from top header*/
-  visibility: hidden;
-}
-/*End Jumpt to nav elements and header issues*/
-
-h1 {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #4e5964;
-}
-h2 {
-    text-align: left;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #2c3339;
-}
-div {
-    padding-top: 25px;
-    padding-right: 25px;
-    padding-bottom: 25px;
-    padding-left: 25px;
-}
-p.a {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
-}
-p.k {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #000000;
-}
-.footer {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #4e5964;
-  text-align: center;
-  padding-right: 25px;
-  padding-bottom: 25px;
-  padding-left: 25px;  
-}
-/*Gallery starts here. responsive gallery*/
-div.gallery {
-    border: none;
-}
-
-div.gallery:hover {
-    border: none;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #4e5964;
-    text-align: left;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px){
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    .responsive {
-        width: 100%;
-    }
-}
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-/*End Gallery styles*/
-</style>
+<link rel="stylesheet" type="text/css" href="mainpage.css" media="all" />
+<link rel="stylesheet" type="text/css" href="flexiblegrid.css" media="all" />
 <meta charset="UTF-8">
 <title>Clare Rauch</title>
 </head>
@@ -179,32 +11,72 @@ div.desc {
   <span class="anchor" id="top"></span>
 <ul class="nav">
   <li><a href="#about">About</a></li>
-  <li><a href="#cv">CV</a></li>
   <li><a href="#portfolio">Portfolio</a></li>
+  <li><a href="#cv">CV</a></li>
 </ul>
 <br />
-<h1><strong>Clare E. Rauch</strong></h1>
 
-<!-- fixed background image
-<div class="fixed-bg"></div>
--->
-<div class="parallax"></div>
-
-<span class="anchor" id="about"></span>
-<div style="min-height:300px;background-color:#708090;">
-  <a name="about"></a>
-  <h2>About</h2>
-    <p class="a">I believe in the power of information to improve the health care decision making process. I believe that well organized and easily accessed information aids in understanding. I believe a beautiful design can engage the viewer, and allow for processing the information in digestible pieces. I believe a combination of understanding literacy levels and education tailored to the audience can help improve understanding, as well as contribute to changing health behaviors. I am interested in researching the areas where design, libraries and education, and public health promotion intersect. <br /> <br /><a href="#top">Back to top of page</a></p>
+<div class="parallax parallax_content">
+  <h1><strong>Clare E. Rauch</strong></h1>
 </div>
 
-<div class="parallax"></div>
+<div class="parallax parallax-2"></div>
+
+
+
+<span class="anchor" id="about"></span>
+<div style="min-height:200px; height:auto; background-color:#336699;">
+  <h2 style="color:#ffffff">About</h2>
+  <p class="w">I am currently pursuing a masters degree at the University of Michigan School of Public Health with the Department of Health Behavior and Health Education. Formerly, I worked as a medical librarian at SUNY Upstate Medical University, an academic research center. I am cultivating expertise in Health Communications.</p>
+  <p class="w">I believe in the power of information to improve the health care decision making process. I believe that well organized and easily accessed information aids in understanding. I believe a beautiful design can engage the viewer, and allow for processing the information in digestible pieces. I believe a combination of understanding literacy levels and education tailored to the audience can help improve understanding, as well as contribute to changing health behaviors. I am interested in researching the areas where design, libraries and education, and public health promotion intersect. </p>
+<p><a href="#top">&laquo; Back to Home</a></p>
+</div>
+<div class="parallax parallax-3"></div>
 
 
 <!-- <div style="height:500px;background-color:#709090;"> -->
 <span class="anchor" id="portfolio"></span>
-<div style="height:800px; height:auto; background-color:#ffffff;">
+<div style="height:850px; height:auto; background-color:#ffffff;">
 <h2>Portfolio</h2>
-  <p class="k">Samples of design and copywriting work for the Upstate Medical University Health Sciences Library.</p>
+<h4>The below images are a few selections from my portfolio of communications and design work. The below work was created during my tenure at Upstate Medical University. The targeted audience for the illustrated posters were patients and families of an outpatient cancer center, based on an article about common cancer myths from the National Cancer Institute. The square images were 5"x5" magnets targeted to students, and clinical staff working or studying at the hospital. The banners hang in the foyer leading to the library. </h4>
+  <!--<p class="k">Samples of design and copywriting work for the Upstate Medical University Health Sciences Library.</p> -->
+  <div class="row">
+    <div class="column">
+      <a target="_blank" href="CancerMyths_poster_famhistory_2016Mar.jpg">
+      <img src="CancerMyths_poster_famhistory_2016Mar.jpg" style="width:100%"></a>
+
+
+      <a target="_blank" href="UpstateHSL_squarecards_PillStudents.jpg">
+      <img src="UpstateHSL_squarecards_PillStudents.jpg" style="width:100%"></a>
+
+    </div>
+    <div class="column">
+      <a target="_blank" href="CancerMyths_poster_powerlines_2016Mar.jpg">
+      <img src="CancerMyths_poster_powerlines_2016Mar.jpg" style="width:100%"></a>
+
+        <a target="_blank" href="CancerMyths_poster_powerlines_2016Mar.jpg">
+      <img src="UpstateHSL_squarecards_PillStudents2.jpg" style="width:100%"></a>
+
+    </div>
+    <div class="column">
+      <a target="_blank" href="CancerMyths_poster_sugar_2016Mar.jpg">
+      <img src="CancerMyths_poster_sugar_2016Mar.jpg" style="width:100%"></a>
+
+      <a target="_blank" href="UpstateHSL_squarecards_PillStudents.jpg">
+      <img src="UpstateHSL_squarecards_PillStudents3.jpg" style="width:100%"></a>
+    </div>
+    <div class="column">
+      <a target="_blank" href="Banners_hallway.jpg">
+      <img src="Banners_hallway.jpg" style="width:100%"></a>
+
+      <a target="_blank" href="UpstateHSL_squarecards_PillStudents.jpg">
+      <img src="UpstateHSL_squarecards_PillStudents3.jpg" alt="Black and white photograph of a medicine cabinet circa 1917 with overlay writing 'Make writing that paper an easier pill to swallow. Ask a librarian.'" style="width:100%"></a>
+    </div>
+
+  </div>
+
+
+<!-- Turn off responsive gallery with image descriptions
   <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="Banners_hallway.jpg">
@@ -212,6 +84,7 @@ div.desc {
     </a>
     <div class="desc">Banners hanging in the entry way to the Upstate Medical University Library</div>
   </div>
+</div>
 </div>
 
 
@@ -238,10 +111,11 @@ div.desc {
     <a target="_blank" href="CancerMyths_poster_sugar_2016Mar.jpg">
       <img src="CancerMyths_poster_sugar_2016Mar.jpg" alt="Poster with a spoonful of sugar cascading down on a dark green background" width="500" height="625">
     </a>
-    <div class="desc">Cancer Myths Poster Series</div>
+    <div class="desc">Part of the Cancer Myths Poster Series based on information from the National Cancer Institute</div>
   </div>
 </div>
 
+<!-- Turning off four card image
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="SquareCards.jpg">
@@ -250,6 +124,7 @@ div.desc {
     <div class="desc">Magnets for targeted library audiences.</div>
   </div>
 </div>
+
 
 <div class="responsive">
   <div class="gallery">
@@ -279,13 +154,29 @@ div.desc {
 </div>
 
 <div class="clearfix"></div>
-<br /> <br /><p class="k"><a href="#top">Back to top of page</a></p>
+<p><a href="#top">&laquo; Back to top of page</a></p>
+Turn off gallery -->
+<p><a href="#top">&laquo; Back to Home</a></p>
 </div>
+<!--ID=portfolio -->
 
-<div class="parallax"></div>
+<div class="parallax parallax-3"></div>
 
-<div style="height:60px;background-color:#ffffff;"><p class="footer">Copyright &#169; 2018 Clare Rauch all rights reserved.
-</p></div>
+<span class="anchor" id="cv"></span>
+  <div>
+    <h2>Curriculum Vitae (CV)</h2>
+    <embed src= "Rauch_CV_2018_website.pdf" width= "850" height="500">
+      <p><a href="#top">&laquo; Back to Home</a></p>
+  </div>
+
+<div class="parallax parallax-1"></div>
+
+<!-- footer -->
+<div style="height:60px;background-color:#ffffff;">
+  <p class="footer">Copyright &#169; 2018 Clare Rauch all rights reserved.
+  </p>
+</div>
+<!-- END footer -->
 </body>
 
 </html>
