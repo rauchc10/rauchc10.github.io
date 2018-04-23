@@ -117,7 +117,7 @@ h1 {
 }
 End header white background */
 h1 {
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
@@ -154,6 +154,7 @@ p.w {
   font-family: georgia, serif;
   color: #ffffff;
   float:left;
+  text-align: left;
   padding-left: 25px;
 }
 p.k {
@@ -177,7 +178,7 @@ a {
   padding-left: 25px;
 }
 a:link, a:visited {
-    color: ##4e5964;
+    color: #4e5964;
     text-decoration: none;
 }
 a:hover {
