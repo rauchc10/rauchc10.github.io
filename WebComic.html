@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mainpage.css" media="all" />
+<link rel="stylesheet" type="text/css" href="flexiblegrid.css" media="all" />
+<link rel="stylesheet" type="text/css" href="Slideshow.css" media="all" />
+<meta charset="UTF-8">
+<title>Webcomic</title>
+</head>
+
+<body>
+  <span class="anchor" id="top"></span>
+<ul class="nav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="index.html#about">About</a></li>
+  <li><a href="index.html#portfolio">Portfolio</a></li>
+  <li><a href="index.html#cv">CV</a></li>
+  <li><a href="WebComic.html">WebComic</a></li>
+</ul>
+<br />
+
+<div class="parallax parallax_content">
+  <h1><strong>Untitled WebComic</strong></h1>
+    <p class="w">The following is a webcomic for public health workers to learn some key concepts in health communications to improve how they communicate health information to patients, families, and the public. Each topic will include citations, and links on where to learn more on a given topic.</p>
+</div>
+
+<div class="parallax parallax-1"></div>
+
+<!-- Begin Slideshow -->
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 7</div>
+    <img src="Storyboard/storyboard1.jpg" style="width:100%">
+    <div class="text">Panel 1: Two characters are talking. The first is explaining why it's challenging to understand very large numbers when we hear them.
+    <p>Character 1: It's hard for humans to understand large numbers when we hear them in news stories. For instance, when we hear about the federal deficit being in the billions of dollars, or that hundreds of thousands of people are at risk for getting a disease, our brains don't process the amounts. Anyone who wants to communicate large numbers in a meaningful ways needs to become skilled at social math.  </p>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 7</div>
+    <img src="Storyboard/storyboard1.jpg" style="width:100%">
+    <div class="text">Panel 2: Two characters are talking. The first is explaining why it's challenging to understand very large numbers when we hear them.
+    <p>Character 2: Ugh, math.</p>
+    <p>Character 1: You don’t like math?</p>
+    <p>Character 2: I HATE math.</p>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 7</div>
+    <img src="Storyboard/storyboard3.jpg" style="width:100%">
+    <div class="text">Panel 3: The setting is now a football stadium overview. From far above we see our characters as two dots within the football stadium.
+    <p>Character 2: Whoa! How’d you do that? Where are we?</p>
+    <p>Character 1: We’re in a football stadium.</p>
+    <p>Character 2: Oooookay.</p>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 7</div>
+    <img src="Storyboard/storyboard4.jpg" style="width:100%">
+    <div class="text">Panel 4: We still see the characters in a football stadium, but now there is a close-up of characters on the football field with yardage numbers in the background and the grass of the field.
+    <p>Character 1: Did you know the chances of a man getting breast cancer is like the two of us in a crowd filling this football stadium?
+    </p>
+    <p>Character 2: No, I didn’t realize! That seems like a small chance that men will get breast cancer.</p>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 7</div>
+    <img src="Storyboard/storyboard5.jpg" style="width:100%">
+    <div class="text">Panel 5: We see our two characters in the back of a Salvador Dali type landscape representing time/persistence of memory/surrealism.
+    <p>Character 1: Did you know every 12 minutes a person dies in a car accident?
+    </p>
+    <p>Character 2: No, wow. That’s a lot of people dying from car accidents! Someone should do something about that.</p>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 7</div>
+    <img src="Storyboard/storyboard5-5.jpg" style="width:100%">
+    <div class="text">Panel 6: We are back to the blank background. The same two characters are still discussing the topic of social math.
+    <p>Character 1: The cost to incarcerate 1 person could buy 1 month of housing for 30 families in Baltimore?
+    </p>
+    <p>Character 2: Oh, wow... that's --Wait, a minute! This is MATH!</p>
+    <p>Character 1: Maybe. </p>
+    <p>Character 2: You’ve been using math this whole time!</p>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 7</div>
+    <img src="Storyboard/storyboard6.jpg" style="width:100%">
+    <div class="text">Panel 7: We are back to the blank background. The same two characters are still discussing the topic of social math.
+    <p>Character 1: [shrugs] You understand what I was talking about, right?</p>
+    <p>Character 2: I suppose. </p>
+    </div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+  </div>
+  <!-- End Slideshow -->
+
+<!-- JavaScript for slideshow -->
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += "active";
+  }
+  </script>
+
+  <div>
+    <h2>For more information on Social Math, click on the links listed below:</h2>
+    <a href="https://www.asist.org/publications/bulletin/junejuly-2016/social-math/" target="_blank"> >>Click here for Social Math from the Association for Information Science & Technology</a>
+    <br /><a href="https://www.cancer.org/content/dam/cancer-org/research/cancer-facts-and-statistics/annual-cancer-facts-and-figures/2017/cancer-facts-and-figures-2017-special-section-rare-cancers-in-adults.pdf" target="_blank"> >>Click here for 2017 Cancer Facts and Figures from the American Cancer Society</a>
+  </div>
+
+  <div class="parallax parallax-1"></div>
+
+  <!-- footer -->
+  <div style="height:60px;background-color:#ffffff;">
+    <p class="footer">Copyright &#169; 2018 Clare Rauch all rights reserved.
+    </p>
+  </div>
+  <!-- END footer -->
+</body>
+</html>
