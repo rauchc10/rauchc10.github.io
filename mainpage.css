@@ -140,7 +140,7 @@ h3 {
 }
 h4 {
   text-align: left;
-  font-family: georgia, serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: ##336699;
   padding-left: 25px;
 }
@@ -151,14 +151,14 @@ div {
   padding-left: 25px;
 }
 p.w {
-  font-family: georgia, serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
   float:left;
   text-align: left;
   padding-left: 25px;
 }
 p.k {
-  font-family: georgia, serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #000000;
   float:left;
   padding-left: 25px;
@@ -205,7 +205,7 @@ div.gallery img {
 
 div.desc {
   padding: 15px;
-  font-family: georgia, serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #4e5964;
   text-align: left;
 }
