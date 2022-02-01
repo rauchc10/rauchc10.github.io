@@ -134,18 +134,17 @@ h2 {
 }
 h3 {
   text-align: left;
-  text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
-  color: #2c3339;
+  color: #1d3557;
   padding-left: 25px;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 h4 {
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   color: #336699;
   padding-left: 25px;
-  font-size: 1.8em;
+  font-size: 1.7em;
 }
 div {
   padding-top: 25px;
